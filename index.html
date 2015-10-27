@@ -8,12 +8,24 @@
 	<link rel="stylesheet" href="https://code.jquery.com/jquery-2.1.4.js" 
 	>
 	<style>
+		* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		
+		html {
+			height: 100%;
+			background: white;
+			background: radial-gradient(circle, #fff 20%, #ccc);
+			background-size: cover;
+		}
+			
         .myDiv{
         	background-color: #00FFFF;
         	height: 350px;
         	width: 300px;
-        }
-
+		}
+		
         
 	</style>
 	
@@ -21,7 +33,7 @@
 
 	<body>
 		<div class="myDiv">
-			<div class="col-md-12 col-lg-12">
+			<div id="calcu" class="col-md-12 col-lg-12">
 				<input id="result" type="text" readonly class="col-md-12 col-lg-12"></br></br>
 			    
 				
