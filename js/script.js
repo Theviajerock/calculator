@@ -8,13 +8,14 @@ const six = 6;
 const seven = 7;
 const eight = 8;
 const nine = 9;
-var total;
+var total = 0;
 var tempNum;
 var opeExpresion;
 
 function pushNumber(num) {
-	if (typeof(total) === "undefined") {
+	if (total === 0) {
 		total = num.toString();
+		document.getElementById('result').value = total;
 		console.log(total);
 		console.log(tempNum);
 	} else if (typeof(total) === "string") {
@@ -22,6 +23,7 @@ function pushNumber(num) {
 			total = total + num;
 			console.log(total);
 			console.log(tempNum);
+			document.getElementById('result').value = total;
 		}
 	};
 };
@@ -39,5 +41,6 @@ function equal() {
 	makeIt = eval(total);
 	console.log(makeIt);
 	total = makeIt;
+	document.getElementById('result').value = total;
 	
 };
